@@ -1,0 +1,80 @@
+main.background{
+    position: absolute;
+    z-index: -3;
+    width: 300%;
+    height: 300%;
+    left: -100%;
+    background: linear-gradient( 180deg, rgb(199, 35, 35),rgb(80, 0, 0));
+    animation: background_1 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: all 1s ease-in-out;
+}
+@keyframes background_1 {
+    0%{transform: rotate(0deg);top: -130%;animation-timing-function: ease-out;}
+    25%{transform: rotate(45deg);top: -120%;animation-timing-function: linear;}
+    75%{transform: rotate(-45deg);top: -140%;animation-timing-function: linear;}
+    100%{transform: rotate(0deg);top: -130%;animation-timing-function: ease-in;}
+}
+main.background_box{
+    position: absolute;
+    z-index: -2;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    top: 0px;
+}
+@keyframes background_2 {
+    0% {transform: rotate(0deg);top: -50px;box-shadow: 0px 0px 10px rgb(112, 16, 16);background-color: rgba(121, 13, 13,0.8);}
+    60%{transform: rotate(400deg);top: 200%;box-shadow: none;background-color:rgba(0, 0, 0, 0);}
+    61%{transform: rotate(0deg);top: 200%;box-shadow: none;background-color:rgba(0, 0, 0, 0);}
+    100%{transform: rotate(0deg);top: 0px;box-shadow: none;background-color:rgba(0, 0, 0, 0);}
+}
+main#background_1{
+    animation: background_2 7.15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 12.5%;
+}
+main#background_2{
+    animation: background_2 18.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 28.2%;
+}
+main#background_3{
+    animation: background_2 5.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 35.12%;
+}
+main#background_4{
+    animation: background_2 14.15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 54.25%;
+}
+main#background_5{
+    animation: background_2 8.23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 72.5%;
+}
+main#background_6{
+    animation: background_2 13.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 85.5%;
+}
+main#background_7{
+    animation: background_2 24.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 2%;
+}
+main#background_8{
+    animation: background_2 19s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 89%;
+}

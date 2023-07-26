@@ -1,0 +1,32 @@
+main.content{
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px 15px 50px 15px;
+    top: 62.5px;
+    left: 0px;
+    border-radius: 2.5px;
+    background-color: rgb(200, 200, 200, 0.25);
+}
+div.content{
+    padding: 2.5px;
+    margin: 0px auto 0px auto;
+    width: 30%;
+    text-align: center;
+}
+#am{
+    display: none;
+    position: absolute;
+    left: 50%;
+}
+#am_img{
+    position: absolute;
+    width: 100px;
+    border-top-right-radius: 50px ;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 50px;
+    top: -5px;
+    box-shadow: -5px -5px 5px 2px rgb(219, 17, 78);
+    transition: all 3s ease-in-out;
+}
