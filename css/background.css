@@ -1,9 +1,9 @@
 main.background{
     position: absolute;
     z-index: -3;
-    width: 300%;
-    height: 300%;
-    left: -100%;
+    width: 400%;
+    height: 400%;
+    left: -150%;
     background: linear-gradient( 180deg, rgb(199, 35, 35),rgb(80, 0, 0));
     animation: background_1 5s;
     animation-iteration-count: infinite;
@@ -11,10 +11,10 @@ main.background{
     transition: all 1s ease-in-out;
 }
 @keyframes background_1 {
-    0%{transform: rotate(0deg);top: -130%;animation-timing-function: ease-out;}
-    25%{transform: rotate(45deg);top: -120%;animation-timing-function: linear;}
-    75%{transform: rotate(-45deg);top: -140%;animation-timing-function: linear;}
-    100%{transform: rotate(0deg);top: -130%;animation-timing-function: ease-in;}
+    0%{transform: rotate(0deg);top: -140%;animation-timing-function: ease-out;}
+    25%{transform: rotate(45deg);top: -130%;animation-timing-function: linear;}
+    75%{transform: rotate(-45deg);top: -150%;animation-timing-function: linear;}
+    100%{transform: rotate(0deg);top: -140%;animation-timing-function: ease-in;}
 }
 main.background_box{
     position: absolute;
