@@ -5,7 +5,7 @@ from pathlib import Path
 from collections import deque
 
 # 将root改成您存放html文件的目录
-html= Path(".")
+search= Path(".")
 
 # 扫描html文件
 def scanfile(path: Path, content) -> dict:
@@ -19,14 +19,14 @@ def scanfile(path: Path, content) -> dict:
     title = title.get_text() if title else path.stem
     return {
         "title": title,
-        "path": path.relative_to(html).__str__(),
+        "path": path.relative_to(search).__str__(),
         "text": textlist
     }
 
 
 if __name__ == "__main__":
     j = []
-    target = deque([html])  # type: deque[Path]
+    target = deque([search])  # type: deque[Path]
 
     # 递归的遍历文件夹下所有的html文件
     while len(target) > 0:

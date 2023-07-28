@@ -4,7 +4,7 @@ main.background{
     width: 400%;
     height: 400%;
     left: -150%;
-    background: linear-gradient( 180deg, rgb(199, 35, 35),rgb(80, 0, 0));
+    background: linear-gradient( 180deg, rgb(200, 0, 0),rgb(35, 0, 0));
     animation: background_1 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -15,6 +15,9 @@ main.background{
     25%{transform: rotate(45deg);top: -130%;animation-timing-function: linear;}
     75%{transform: rotate(-45deg);top: -150%;animation-timing-function: linear;}
     100%{transform: rotate(0deg);top: -140%;animation-timing-function: ease-in;}
+}
+body{
+    background: linear-gradient( 180deg, rgb(200, 0, 0),rgb(100, 0, 0));
 }
 main.background_box{
     position: absolute;

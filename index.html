@@ -1,130 +1,140 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <title>肝帝生存WiKi</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no">
-        <link rel="icon" href="picture resource/logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/index content.css">
-        <link rel="stylesheet" href="css/background.css">
-        <script src="js/directory.js"></script>
-    </head>
-    <body>
-        <main class="background"></main>
-        <main id="background_1" class="background_box"></main>
-        <main id="background_2" class="background_box"></main>
-        <main id="background_3" class="background_box"></main>
-        <main id="background_4" class="background_box"></main>
-        <main id="background_5" class="background_box"></main>
-        <main id="background_6" class="background_box"></main>
-        <main id="background_7" class="background_box"></main>
-        <main id="background_8" class="background_box"></main>
-        <main class="top">
-            <a onclick="showHide(this)">
-                <div class="directory">
-                    <div class="hr-top"></div>
-                    <div class="hr-middle"></div>
-                    <div class="hr-bottom"></div>
-                </div>
-            </a>
-            <ul class="directory">
-                <iframe class="directory" src="directory.html"></iframe>
-            </ul>
-            <div class="logo">
-                <img class="logo" src="picture resource/logo.png">
-                <b class="logo">肝帝生存<br>WiKi</b>
+<head>
+    <meta charset="utf-8">
+    <title>肝帝生存WiKi</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no">
+    <link rel="icon" href="/GandishengcunWiki/picture/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/GandishengcunWiki/css/style.css">
+    <link rel="stylesheet" href="/GandishengcunWiki/css/index content.css">
+    <link rel="stylesheet" href="/GandishengcunWiki/css/background.css">
+    <script src="/GandishengcunWiki/js/directory.js"></script>
+</head>
+
+<body>
+    <main class="background"></main>
+    <main id="background_1" class="background_box"></main>
+    <main id="background_2" class="background_box"></main>
+    <main id="background_3" class="background_box"></main>
+    <main id="background_4" class="background_box"></main>
+    <main id="background_5" class="background_box"></main>
+    <main id="background_6" class="background_box"></main>
+    <main id="background_7" class="background_box"></main>
+    <main id="background_8" class="background_box"></main>
+    <main class="top">
+        <a onclick="showHide(this)">
+            <div class="directory">
+                <div class="hr-top"></div>
+                <div class="hr-middle"></div>
+                <div class="hr-bottom"></div>
             </div>
-            <div class="flex_box">
-                <div class="box_1"><a class="no_decoration" href="">[ 关于作者 ]</a></div>
-                <div class="box_2"><a class="no_decoration" href="">[ 别看我 ]</a></div>
+        </a>
+        <ul class="directory">
+            <iframe class="directory" src="/GandishengcunWiki/directory.html"></iframe>
+        </ul>
+        <div class="logo">
+            <img class="logo" src="/GandishengcunWiki/picture/logo.png">
+            <b class="logo">肝帝生存<br>WiKi</b>
+        </div>
+        <div class="flex_box">
+            <div class="box_1"><a class="no_decoration" href="">[ 关于作者 ]</a></div>
+            <div class="box_2"><a class="no_decoration" href="">[ 别看我 ]</a></div>
+        </div>
+        <a onclick="showHide(this)" class="no_decoration">
+            <div class="search">
+                <b>站内<br>搜索</b>
             </div>
-            <a onclick="showHide(this)" class="no_decoration">
-                <div class="search">
-                    <b>站内<br>搜索</b>
-                </div>
-            </a>
-            <ul class="search">
-                <p class="search">此搜索因技术暂时无法使用<br>请见谅</p>
-                <form class="example" action="">
-                    <input type="text" placeholder="search..." name="search" class="search">
-                    <button class="search" type="submit"><b class="fa fa-search">搜索</b></button>
-                </form>
-            </ul>
-        </main>
-        <main class="content">
-            <div class="index img">
-                <img class="index" src="picture resource/logo.png">
-                <div class="index" id="index_div_p">
-                    <p id="h1">欢迎来到肝帝生存官方WiKi</p>
-                    "肝帝生存"是一个在"<b>Minecraft</b>"原版实现Mod玩法的数据包<br>
-                    越过Mod冲突,无需前置组件<br>
-                    <b><p id="index_p">此WiKi参考由官方撰写</p></b>
-                </div>
+        </a>
+        <ul class="search">
+            <iframe id="iframe_search" src="/GandishengcunWiki/search.html"></iframe>
+        </ul>
+    </main>
+    <main class="content">
+        <div class="index img">
+            <img class="index" src="/GandishengcunWiki/picture/logo.png">
+            <div class="index" id="index_div_p">
+                <p id="h1">欢迎来到肝帝生存官方WiKi</p>
+                "肝帝生存"是一个在"<b>Minecraft</b>"原版实现Mod玩法的数据包<br>
+                越过Mod冲突,无需前置组件<br>
+                <b>
+                    <p id="index_p">此WiKi参考由官方撰写</p>
+                </b>
             </div>
-            <div class="index_box_2">
-                介绍
-                <div class="index_box_2_1">
-                    <div class="index_box_2_1_1">
-                        <img class="index_box_2_1_1_1" src="picture resource/grass_block_side.png">
-                        支持游戏版本<br>1.20
-                    </div>
-                    <div class="index_box_2_1_1">
-                        <img class="index_box_2_1_1_2" src="picture resource/book.png">
-                        数据包版本<br>v1.1.0
-                    </div>
-                    <div class="index_box_2_1_1">
-                        <a id="black" class="no_decoration" target="_blank" href="https://www.mcbbs.net/thread-1171752-1-1.html">
-                            <img class="index_box_2_1_1_3" src="picture resource/book.png">
-                            官方链接<br>MCBBS
-                        </a>
-                    </div>
+        </div>
+        <div class="index_box_2">
+            介绍
+            <div class="index_box_2_1">
+                <div class="index_box_2_1_1">
+                    <img class="index_box_2_1_1_1" src="/GandishengcunWiki/picture/grass_block_side.png">
+                    支持游戏版本<br>1.20
                 </div>
-                <div class="index_box_2_2">
-                    <div class="index_box_2_2_1">
-                        分类
-                        <main class="index_box_2_2_1_shadow" id="index_box_2_2_1_shadow_1"></main>
-                        <main class="index_box_2_2_1_shadow" id="index_box_2_2_1_shadow_2"></main>
-                    </div>
-                    <div class="index_box_2_2_2">
-                        <a class="index_box_content no_decoration" href="https://www.mcbbs.net/thread-912853-1-1.html" target="_blank">
-                            <img class="content_img_1 content_img" src="picture resource/book.png">
-                            <p class="content_4">安装方式</p>
-                        </a>
-                        <a class="index_box_content no_decoration" href="search/html/getting started/index.html" target="_parent">
-                            <img class="content_img_2 content_img" src="picture resource/feather.png">
-                            <p class="content_2">入门</p>
-                        </a>
-                        <a class="index_box_content no_decoration" href="" target="_parent">
-                            <img class="content_img_3 content_img" src="picture resource/oak_log.png">
-                            <p class="content_2">物品</p>
-                        </a>
-                        <a class="index_box_content no_decoration" href="" target="_parent">
-                            <img class="content_img_4 content_img" src="picture resource/zombie.png">
-                            <p class="content_2">生物</p>
-                        </a>
-                    </div>
-                    <div class="index_box_2_2_2">
-                        <a class="index_box_content no_decoration" href="" target="_parent">
-                            <img class="content_img_5 content_img" src="picture resource/diamond_pickaxe.png">
-                            <p class="content_2">工具</p>
-                        </a>
-                        <a class="index_box_content no_decoration" href="" target="_parent">
-                            <img class="content_img_6 content_img" src="picture resource/iron_sword.png">
-                            <p class="content_2">武器</p>
-                        </a>
-                        <a class="index_box_content no_decoration" href="" target="_parent">
-                            <img class="content_img_7 content_img" src="picture resource/crafting_table_top.png">
-                            <p class="content_4">合成器械</p>
-                        </a>
-                        <a class="index_box_content no_decoration" href="" target="_parent">
-                            <img class="content_img_8 content_img" src="picture resource/gold_layer_1.png">
-                            <p class="content_5">事件与挑战</p>
-                        </a>
-                    </div>
+                <div class="index_box_2_1_1">
+                    <img class="index_box_2_1_1_2" src="/GandishengcunWiki/picture/book.png">
+                    数据包版本<br>v1.1.0
+                </div>
+                <div class="index_box_2_1_1">
+                    <a id="black" class="no_decoration" target="_blank"
+                        href="https://www.mcbbs.net/thread-1171752-1-1.html">
+                        <img class="index_box_2_1_1_3" src="/GandishengcunWiki/picture/book.png">
+                        官方链接<br>MCBBS
+                    </a>
                 </div>
             </div>
-        </main>
-    </body>
+            <div class="index_box_2_2">
+                <div class="index_box_2_2_1">
+                    分类
+                    <main class="index_box_2_2_1_shadow" id="index_box_2_2_1_shadow_1"></main>
+                    <main class="index_box_2_2_1_shadow" id="index_box_2_2_1_shadow_2"></main>
+                </div>
+                <div class="index_box_2_2_2">
+                    <a class="index_box_content no_decoration" href="https://www.mcbbs.net/thread-912853-1-1.html"
+                        target="_blank">
+                        <img class="content_img_1 content_img" src="/GandishengcunWiki/picture/book.png">
+                        <p class="content_4">安装方式</p>
+                    </a>
+                    <a class="index_box_content no_decoration"
+                        href="/GandishengcunWiki/search/html/getting started/index.html" target="_parent">
+                        <img class="content_img_2 content_img" src="/GandishengcunWiki/picture/feather.png">
+                        <p class="content_2">入门</p>
+                    </a>
+                    <a class="index_box_content no_decoration" href="/GandishengcunWiki/search/html/articles/index.html"
+                        target="_parent">
+                        <img class="content_img_3 content_img" src="/GandishengcunWiki/picture/oak_log.png">
+                        <p class="content_2">物品</p>
+                    </a>
+                    <a class="index_box_content no_decoration" href="/GandishengcunWiki/search/html/biology/index.html"
+                        target="_parent">
+                        <img class="content_img_4 content_img" src="/GandishengcunWiki/picture/zombie.png">
+                        <p class="content_2">生物</p>
+                    </a>
+                </div>
+                <div class="index_box_2_2_2">
+                    <a class="index_box_content no_decoration" href="/GandishengcunWiki/search/html/tool/index.html"
+                        target="_parent">
+                        <img class="content_img_5 content_img" src="/GandishengcunWiki/picture/diamond_pickaxe.png">
+                        <p class="content_2">工具</p>
+                    </a>
+                    <a class="index_box_content no_decoration" href="/GandishengcunWiki/search/html/weapon/index.html"
+                        target="_parent">
+                        <img class="content_img_6 content_img" src="/GandishengcunWiki/picture/iron_sword.png">
+                        <p class="content_2">武器</p>
+                    </a>
+                    <a class="index_box_content no_decoration"
+                        href="/GandishengcunWiki/search/html/apparatus/index.html" target="_parent">
+                        <img class="content_img_7 content_img" src="/GandishengcunWiki/picture/crafting_table_top.png">
+                        <p class="content_4">合成器械</p>
+                    </a>
+                    <a class="index_box_content no_decoration" href="/GandishengcunWiki/search/html/incident/index.html"
+                        target="_parent">
+                        <img class="content_img_8 content_img" src="/GandishengcunWiki/picture/gold_layer_1.png">
+                        <p class="content_5">事件与挑战</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>
