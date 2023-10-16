@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
+<html id="search">
+  <head>
     <title>肝帝生存WiKi</title>
-    <link rel="icon" href="picture/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="icon" href="picture/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body style="margin-left: 10px;">
-    <p class="search">此搜索因技术暂时无法使用<br>请见谅</p>
-    <form class="example" action="">
-        <input type="text" placeholder="search..." name="search" class="search">
-        <button class="search" type="submit"><b class="fa fa-search">搜索</b></button>
-    </form>
-</body>
-
+  <body style="margin-left: 10px">
+    <div>
+      <form class="example" onSubmit="return check()" autocomplete="off">
+        <input
+          id="input"
+          type="text"
+          placeholder="输入关键词..."
+          name="search"
+          class="search"
+          oninput="searchtext()"
+          onpropertychange="searchtext()"
+        />
+        <div class="resultlist" id="resultlist">
+          <p>等待搜索中...</p>
+        </div>
+      </form>
+      <script type="text/javascript" src="search/searcher.js"></script>
+    </div>
+  </body>
 </html>
