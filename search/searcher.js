@@ -1,4 +1,5 @@
-let SearchResult = '[{"title": "\u6b66\u5668", "path": "html/weapon/\u6b66\u5668.html", "text": ""}, {"title": "\u5de5\u5177", "path": "html/tool/\u5de5\u5177.html", "text": ""}, {"title": "\u4e8b\u4ef6\u4e0e\u6311\u6218", "path": "html/incident/\u4e8b\u4ef6\u4e0e\u6311\u6218.html", "text": ""}, {"title": "\u5165\u95e8", "path": "html/getting started/\u5165\u95e8.html", "text": ""}, {"title": "\u751f\u7269", "path": "html/biology/\u751f\u7269.html", "text": ""}, {"title": "\u7269\u54c1", "path": "html/articles/\u7269\u54c1.html", "text": "\u7269\u54c1"}, {"title": "\u5408\u6210\u5668\u68b0", "path": "html/apparatus/\u5408\u6210\u5668\u68b0.html", "text": ""}]';
+let SearchResult =
+  '[{"title": "\u6b66\u5668", "path": "search/html/weapon/\u6b66\u5668.html", "text": ""}, {"title": "\u5de5\u5177", "path": "search/html/tool/\u5de5\u5177.html", "text": ""}, {"title": "\u4e8b\u4ef6\u4e0e\u6311\u6218", "path": "search/html/incident/\u4e8b\u4ef6\u4e0e\u6311\u6218.html", "text": ""}, {"title": "\u5165\u95e8", "path": "search/html/getting started/\u5165\u95e8.html", "text": ""}, {"title": "\u751f\u7269", "path": "search/html/biology/\u751f\u7269.html", "text": ""}, {"title": "\u7269\u54c1", "path": "search/html/articles/\u7269\u54c1.html", "text": "\u7269\u54c1"}, {"title": "\u5408\u6210\u5668\u68b0", "path": "search/html/apparatus/\u5408\u6210\u5668\u68b0.html", "text": ""}]';
 obj = JSON.parse(SearchResult);
 
 function check() {
@@ -35,8 +36,7 @@ input.addEventListener("blur", (e) => {
 function searchtext() {
   result.innerHTML = input.value;
   if (input.value == "") {
-    result.innerHTML =
-      "<p>- 搜索 -</p><hr>" + '<p align="center">等待搜索中...</p><hr>';
+    result.innerHTML = '<p align="center">等待搜索中...</p><hr>';
   }
 
   // 标题搜索
@@ -56,20 +56,24 @@ function searchtext() {
       for (j = 0; j < obj.length; j++) {
         if (obj[j]["title"] == resulttitlecache[i]) {
           titlesearchresult =
-            '<h4><a href="' +
+            '<h4><a target="_parent" href="' +
             obj[j]["path"] +
-            '" class="resulttitle">' +
+            '" class="resulttitle"><main class="searcher_m">' +
             obj[j]["title"].replace(
               new RegExp(input.value, "g"),
-              "<mark>" + input.value + "</mark>"
+              '<mark>' + input.value + '</mark>'
             ) +
-            '</a></h4><em>-标题匹配</em><p class="showbox">' +
+            '</a><p class="showbox">- 标题匹配<br>' +
             obj[j]["text"].substring(0, 100) +
-            "</p>";
-          resultstr = titlesearchresult + "<hr>" + resultstr;
+            "</p></main>";
+          resultstr = titlesearchresult + "" + resultstr;
         }
       }
-      result.innerHTML = '<p>"' + input.value + '"</p><hr>' + resultstr;
+      result.innerHTML =
+        '<p style="margin: 10px 0px 0px 0px;">搜索:"' +
+        input.value +
+        '"</p>' +
+        resultstr;
     }
   }
 
@@ -118,21 +122,22 @@ function searchtext() {
             }
 
             resultfortext =
-              '<h4><a href="' +
+              '<h4><main class="searcher_m"><a target="_parent" href="' +
               obj[k]["path"] +
               '" class="resulttitle">' +
               obj[k]["title"] +
-              "</a></h4><em>-" +
+              '</a><p class="showbox">- ' +
               targetscorecache[i] +
-              '个结果</em><p class="showbox">...' +
+              "个结果<br>..." +
               obj[k]["text"]
                 .substring(textorder, textorder + 100)
                 .replace(
                   new RegExp(input.value, "g"),
                   "<mark>" + input.value + "</mark>"
                 ) +
-              "</p>";
-            textsearchresult = textsearchresult + "<hr>" + resultfortext;
+              "</p></main></h4>>";
+            textsearchresult =
+              textsearchresult + "" + resultfortext;
           }
         }
       }
@@ -150,5 +155,5 @@ function searchtext() {
   result.innerHTML =
     result.innerHTML.substring(0, result.innerHTML.length - 4) +
     textsearchresult.substring(0, textsearchresult.length - 4) +
-    '<hr><a href="https//github.com/reticenceji/StaticPageSearch" class="tr">搜索功能原作者Github项目</a>';
+    '<hr><a target="_parent" href="https//github.com/reticenceji/StaticPageSearch" class="showbox">搜索功能原作者Github项目</a>';
 }

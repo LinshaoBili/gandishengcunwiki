@@ -355,3 +355,12 @@ h4 {
 html#search{
     overflow:unset;
 }
+.showbox{
+  margin: 0px 0px 0px 0px;
+  font-weight: normal;
+}
+.searcher_m{
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  border-radius: 20px;
+}

@@ -34,8 +34,7 @@ input.addEventListener("blur", (e) => {
 function searchtext() {
   result.innerHTML = input.value;
   if (input.value == "") {
-    result.innerHTML =
-      "<p>- 搜索 -</p><hr>" + '<p align="center">等待搜索中...</p><hr>';
+    result.innerHTML = '<p align="center">等待搜索中...</p><hr>';
   }
 
   // 标题搜索
@@ -55,20 +54,24 @@ function searchtext() {
       for (j = 0; j < obj.length; j++) {
         if (obj[j]["title"] == resulttitlecache[i]) {
           titlesearchresult =
-            '<h4><a href="' +
+            '<h4><a target="_parent" href="' +
             obj[j]["path"] +
-            '" class="resulttitle">' +
+            '" class="resulttitle"><main class="searcher_m">' +
             obj[j]["title"].replace(
               new RegExp(input.value, "g"),
               "<mark>" + input.value + "</mark>"
             ) +
-            '</a></h4><em>-标题匹配</em><p class="showbox">' +
+            '</a><p class="showbox">- 标题匹配<br>' +
             obj[j]["text"].substring(0, 100) +
-            "</p>";
-          resultstr = titlesearchresult + "<hr>" + resultstr;
+            "</p></main>";
+          resultstr = titlesearchresult + "" + resultstr;
         }
       }
-      result.innerHTML = '<p>"' + input.value + '"</p><hr>' + resultstr;
+      result.innerHTML =
+        '<p style="margin: 10px 0px 0px 0px;">搜索:"' +
+        input.value +
+        '"</p>' +
+        resultstr;
     }
   }
 
@@ -117,21 +120,21 @@ function searchtext() {
             }
 
             resultfortext =
-              '<h4><a href="' +
+              '<h4><main class="searcher_m"><a target="_parent" href="' +
               obj[k]["path"] +
               '" class="resulttitle">' +
               obj[k]["title"] +
-              "</a></h4><em>-" +
+              '</a><p class="showbox">- ' +
               targetscorecache[i] +
-              '个结果</em><p class="showbox">...' +
+              "个结果<br>..." +
               obj[k]["text"]
                 .substring(textorder, textorder + 100)
                 .replace(
                   new RegExp(input.value, "g"),
                   "<mark>" + input.value + "</mark>"
                 ) +
-              "</p>";
-            textsearchresult = textsearchresult + "<hr>" + resultfortext;
+              "</p></main></h4>>";
+            textsearchresult = textsearchresult + "" + resultfortext;
           }
         }
       }
@@ -149,5 +152,5 @@ function searchtext() {
   result.innerHTML =
     result.innerHTML.substring(0, result.innerHTML.length - 4) +
     textsearchresult.substring(0, textsearchresult.length - 4) +
-    '<hr><a href="https//github.com/reticenceji/StaticPageSearch" class="tr">搜索功能原作者Github项目</a>';
+    '<hr><a target="_parent" href="https//github.com/reticenceji/StaticPageSearch" class="showbox">搜索功能原作者Github项目</a>';
 }

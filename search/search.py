@@ -27,7 +27,7 @@ def scanfile(path: Path, content) -> dict:
     title = title.get_text() if title else path.stem
     return {
         "title": title,
-        "path": path.relative_to(html).__str__().replace("\\", "/"),
+        "path": "search/" + path.relative_to(html).__str__().replace("\\", "/"),
         "text": textlist,
     }
 
