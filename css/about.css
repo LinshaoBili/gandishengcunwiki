@@ -15,18 +15,23 @@ div.content{
     width: 30%;
     text-align: center;
 }
-#am{
-    display: none;
-    position: absolute;
-    left: 52.5%;
-}
 #am_img{
     position: absolute;
+    opacity: 0;
+    margin-top: -50px;
+    margin-left: 10px;
+    transform: translateY(-5000px);
     width: 100px;
     border-top-right-radius: 50px ;
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 50px;
-    top: -5px;
     box-shadow: -5px -5px 5px 2px rgb(219, 17, 78);
-    transition: all 3s ease-in-out;
+}
+.linshao:hover #am_img{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.linshao:hover #am_img{
+    transform: translateY(0px);
+    transition: 0s;
 }
