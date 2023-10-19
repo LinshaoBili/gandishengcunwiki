@@ -1,5 +1,4 @@
-let SearchResult =
-  '[{"title": "\u6b66\u5668", "path": "search/html/weapon/\u6b66\u5668.html", "text": ""}, {"title": "\u5de5\u5177", "path": "search/html/tool/\u5de5\u5177.html", "text": ""}, {"title": "\u4e8b\u4ef6\u4e0e\u6311\u6218", "path": "search/html/incident/\u4e8b\u4ef6\u4e0e\u6311\u6218.html", "text": ""}, {"title": "\u5165\u95e8", "path": "search/html/getting started/\u5165\u95e8.html", "text": ""}, {"title": "\u751f\u7269", "path": "search/html/biology/\u751f\u7269.html", "text": ""}, {"title": "\u7269\u54c1", "path": "search/html/articles/\u7269\u54c1.html", "text": "\u7269\u54c1"}, {"title": "\u5408\u6210\u5668\u68b0", "path": "search/html/apparatus/\u5408\u6210\u5668\u68b0.html", "text": ""}]';
+let SearchResult = '[{"title": "\u6b66\u5668", "path": "search/html/weapon/\u6b66\u5668.html", "text": ""}, {"title": "\u5de5\u5177", "path": "search/html/tool/\u5de5\u5177.html", "text": ""}, {"title": "\u4e8b\u4ef6\u4e0e\u6311\u6218", "path": "search/html/incident/\u4e8b\u4ef6\u4e0e\u6311\u6218.html", "text": ""}, {"title": "\u5165\u95e8", "path": "search/html/getting started/\u5165\u95e8.html", "text": ""}, {"title": "\u751f\u7269", "path": "search/html/biology/\u751f\u7269.html", "text": ""}, {"title": "\u7269\u54c1", "path": "search/html/articles/\u7269\u54c1.html", "text": "\u7269\u54c1"}, {"title": "\u5408\u6210\u5668\u68b0", "path": "search/html/apparatus/\u5408\u6210\u5668\u68b0.html", "text": ""}]';
 obj = JSON.parse(SearchResult);
 
 function check() {
@@ -61,7 +60,7 @@ function searchtext() {
             '" class="resulttitle"><main class="searcher_m">' +
             obj[j]["title"].replace(
               new RegExp(input.value, "g"),
-              '<mark>' + input.value + '</mark>'
+              "<mark>" + input.value + "</mark>"
             ) +
             '</a><p class="showbox">- 标题匹配<br>' +
             obj[j]["text"].substring(0, 100) +
@@ -136,8 +135,7 @@ function searchtext() {
                   "<mark>" + input.value + "</mark>"
                 ) +
               "</p></main></h4>>";
-            textsearchresult =
-              textsearchresult + "" + resultfortext;
+            textsearchresult = textsearchresult + "" + resultfortext;
           }
         }
       }
