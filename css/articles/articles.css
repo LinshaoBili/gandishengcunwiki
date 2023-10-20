@@ -4,6 +4,9 @@ p.h {
   text-align: center;
   margin: 0px 0px 0px 0px;
 }
+p.h4 {
+  display: none;
+}
 div.charset {
   padding: 0.5px;
   width: 550px;
@@ -12,6 +15,15 @@ div.charset {
 }
 .articles_column_p,.articles_column_a {
   position: absolute;
+}
+.articles_column_a{
+  width: 45px;
+  height: 45px;
+  margin: 2.5px;
+  padding: 0px;
+  background-size: cover;
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
 }
 div.articles_column {
   width: 50px;

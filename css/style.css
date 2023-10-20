@@ -224,8 +224,8 @@ ul.search {
   animation-timing-function: ease-out;
   animation: search_on_1 1s;
 }
-#iframe_search{
-    height: 100%;
+#iframe_search {
+  height: 100%;
 }
 
 @keyframes search_on_1 {
@@ -320,15 +320,26 @@ td {
 h4 {
   margin: 5px 0px 0px 0px;
 }
-html#search{
-    overflow:unset;
+html#search {
+  overflow: unset;
 }
-.showbox{
+.showbox {
   margin: 0px 0px 0px 0px;
   font-weight: normal;
 }
-.searcher_m{
+.searcher_m {
   background-color: rgba(255, 255, 255, 0.25);
   padding: 10px;
   border-radius: 20px;
+}
+a {
+  transition: 0.25s;
+}
+
+/* block */
+.number {
+  text-align: center;
+}
+.number p {
+  position: absolute;
 }
