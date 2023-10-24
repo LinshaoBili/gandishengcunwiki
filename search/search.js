@@ -133,7 +133,7 @@ function searchtext() {
                   new RegExp(input.value, "g"),
                   "<mark>" + input.value + "</mark>"
                 ) +
-              "</p></main></h4>>";
+              "</p></main></h4>";
             textsearchresult = textsearchresult + "" + resultfortext;
           }
         }

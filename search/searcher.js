@@ -1,4 +1,4 @@
-let SearchResult = '[{"title": "\u6b66\u5668", "path": "search/html/weapon/\u6b66\u5668.html", "text": ""}, {"title": "\u5de5\u5177", "path": "search/html/tool/\u5de5\u5177.html", "text": ""}, {"title": "\u4e8b\u4ef6\u4e0e\u6311\u6218", "path": "search/html/incident/\u4e8b\u4ef6\u4e0e\u6311\u6218.html", "text": ""}, {"title": "\u5165\u95e8", "path": "search/html/getting started/\u5165\u95e8.html", "text": ""}, {"title": "\u751f\u7269", "path": "search/html/biology/\u751f\u7269.html", "text": ""}, {"title": "\u7269\u54c1", "path": "search/html/articles/\u7269\u54c1.html", "text": "\u7269\u54c1\u809d\u5e1d\u751f\u5b58\u7269\u54c1"}, {"title": "\u7269\u54c1", "path": "search/html/articles/block/block_0001.html", "text": "\u7f16\u53f70001"}, {"title": "\u5408\u6210\u5668\u68b0", "path": "search/html/apparatus/\u5408\u6210\u5668\u68b0.html", "text": ""}]';
+let SearchResult = '[{"title": "\u5b89\u88c5\u65b9\u5f0f", "path": "search/html/\u5b89\u88c5\u65b9\u5f0f.html", "text": "\u6570\u636e\u5305\u5b89\u88c5\u6307\u5357"}, {"title": "\u6b66\u5668", "path": "search/html/weapon/\u6b66\u5668.html", "text": ""}, {"title": "\u5de5\u5177", "path": "search/html/tool/\u5de5\u5177.html", "text": ""}, {"title": "\u4e8b\u4ef6\u4e0e\u6311\u6218", "path": "search/html/incident/\u4e8b\u4ef6\u4e0e\u6311\u6218.html", "text": ""}, {"title": "\u5165\u95e8", "path": "search/html/getting started/\u5165\u95e8.html", "text": ""}, {"title": "\u751f\u7269", "path": "search/html/biology/\u751f\u7269.html", "text": ""}, {"title": "\u7269\u54c1", "path": "search/html/articles/\u7269\u54c1.html", "text": "\u7269\u54c1\u809d\u5e1d\u751f\u5b58\u7269\u54c1"}, {"title": "\u7269\u54c1", "path": "search/html/articles/block/block_0001.html", "text": "\u7f16\u53f70001"}, {"title": "\u5408\u6210\u5668\u68b0", "path": "search/html/apparatus/\u5408\u6210\u5668\u68b0.html", "text": ""}]';
 obj = JSON.parse(SearchResult);
 
 function check() {
@@ -134,7 +134,7 @@ function searchtext() {
                   new RegExp(input.value, "g"),
                   "<mark>" + input.value + "</mark>"
                 ) +
-              "</p></main></h4>>";
+              "</p></main></h4>";
             textsearchresult = textsearchresult + "" + resultfortext;
           }
         }
